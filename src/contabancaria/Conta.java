@@ -1,10 +1,7 @@
 
 package contabancaria;
 
-/**
- *
- * @author FELIP
- */
+
 public class Conta {
   int  numero;
  double saldo;
