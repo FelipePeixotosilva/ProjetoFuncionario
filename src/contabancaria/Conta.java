@@ -1,18 +1,20 @@
 
 package contabancaria;
 
+import sun.applet.Main;
+
 
 public class Conta {
+
+    private  int  numero;
+    private double saldo;
+    private double  limite ; 
+    Cliente cliente[];//   Cliente cliente : assoaciação, Cliente cliente[]:agregação
+  
 
     public void setNumero(int numero) {
         this.numero = numero;
     }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-private  int  numero;
-private double saldo;
 
     public double getSaldo() {
         return saldo;
@@ -21,8 +23,6 @@ private double saldo;
     public double getLimite() {
         return saldo+limite;
     }
-  double  limite ; 
-  String nome;
   
   public boolean saca(double valor){
       if ( valor <= saldo){
@@ -45,6 +45,7 @@ private double saldo;
       else
           System.out.print("Não foi possivel realizar a transferencia!");
   }
+    
   
 
 
