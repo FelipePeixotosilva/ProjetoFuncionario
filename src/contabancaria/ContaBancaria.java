@@ -7,6 +7,7 @@ public class ContaBancaria {
     public static void main(String[] args) {
       Conta conta1 = new Conta();
       Conta conta2 = new Conta();
+      //conta1.cliente = new Cliente [5];//relação de um para cinco
 
      conta2.deposita(0);
       
