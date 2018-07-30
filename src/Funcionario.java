@@ -6,6 +6,7 @@ public class Funcionario {
         jose.verificarTipoFuncionario(jose);
         jose=new Professor();
         jose.verificarTipoFuncionario(jose);
+        ((Diretor)jose).departamento="RH";//Conceito de casting
     }  
     
     void verificarTipoFuncionario(Funcionario objeto){
