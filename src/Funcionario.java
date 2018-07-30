@@ -1,13 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author FELIP
- */
+/*Super classe funcionario*/
 public class Funcionario {
     
+    public static void main(String[] args){
+        Funcionario jose = new Diretor();
+        jose.verificarTipoFuncionario(jose);
+        jose=new Professor();
+        jose.verificarTipoFuncionario(jose);
+    }  
+    
+    void verificarTipoFuncionario(Funcionario objeto){
+    
+        if(objeto instanceof Diretor){
+            System.out.print("Diretor");
+        }
+        else if (objeto instanceof Professor){
+            System.out.print("Professor");
+        }
+        else{
+            System.out.print("Administrativo");
+        }
+    }
 }
