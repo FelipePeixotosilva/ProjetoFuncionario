@@ -10,4 +10,9 @@
  */
 public class Diretor extends Funcionario{
     String departamento;
+    
+    private double salario;
+    public double getBonificacao(){
+    return this.salario*1.4;
+    }
 }
