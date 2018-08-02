@@ -23,5 +23,10 @@
         else{
             System.out.print("Administrativo");
         }
+        
     }
+ interface Cidadao {
+ public void getRg(String numero);
+ double Vota(int idade);
+}
 }
